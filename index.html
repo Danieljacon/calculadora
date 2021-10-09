@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="icon" type="imagem/png" href="calculator-solid.svg" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div>
+        <div class="imagem">
+
+            <div class="content">
+                <div id="calculadora" class="calculadora">
+                    <div class="coluna">
+                        <input type="text" id="display" readonly class="display">
+                    </div>
+
+                    <div class="linha">
+                        <input type="submit" class="btn" value="1" onclick="calc.valor(1)">
+                        <input type="submit" class="btn" value="2" onclick="calc.valor(2)">
+                        <input type="submit" class="btn" value="3" onclick="calc.valor(3)">
+                        <input type="submit" class="btn-operador" value="/" onclick="calc.valor('/');">
+                    </div>
+                    <div class="linha">
+                        <input type="submit" class="btn" value="4" onclick="calc.valor(4)">
+                        <input type="submit" class="btn" value="5" onclick="calc.valor(5)">
+                        <input type="submit" class="btn" value="6" onclick="calc.valor(6)">
+                        <input type="submit" class="btn-operador" value="*" onclick="calc.valor('*');">
+                    </div>
+
+                    <div class="linha">
+                        <input type="submit" class="btn" value="7" onclick="calc.valor(7)">
+                        <input type="submit" class="btn" value="8" onclick="calc.valor(8)">
+                        <input type="submit" class="btn" value="9" onclick="calc.valor(9)">
+                        <input type="submit" class="btn-operador" value="+" onclick="calc.valor('+');">
+                    </div>
+
+                    <div class="linha">
+                        <input type="submit" class="btn" value="0" onclick="calc.valor(0)">
+                        <input type="submit" class="btn-apagar" value="C" onclick="calc.limpar()">
+                        <input type="submit" class="btn-operador" value="=" onclick="calc.calcular()">
+                        <input type="submit" class="btn-operador" value="-" onclick="calc.valor('-')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="name">Daniel Jacon </h1>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

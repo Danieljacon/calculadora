@@ -1,0 +1,104 @@
+:root {
+  --hard-blue-color: rgba(90, 74, 235, 0.308);
+  --black-border: rgb(102, 102, 102);
+  --yellow-color: rgb(245, 188, 10);
+  --blue-color: rgba(0, 183, 255, 0.575);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.imagem {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(wave3.svg);
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculadora {
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px;
+  background-color: var(--blue-color);
+
+  border-radius: 15px;
+
+  -webkit-box-reflect: below 5px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.651));
+
+    
+}
+
+.linha input {
+  font-size: 20px;
+  width: 55px;
+  height: 55px;
+  margin: 2px;
+  border: none;
+  border-bottom: 3px solid var(--black-border);
+  border-radius: 50%;
+  transition: 0.2s ease;
+  cursor: pointer;
+
+  
+}
+
+.btn-operador,
+.display {
+  background-color: var(--yellow-color);
+}
+
+.coluna input {
+  width: 245px;
+  height: 55px;
+  margin-bottom: 5px;
+  border: none;
+  border-bottom: 3px solid var(--black-border);
+  border-radius: 15px;
+  padding: 0px 20px;
+  text-align: center;
+  font-size: 20px;
+  cursor: cell;
+}
+
+.btn {
+  background-color: var(--blue-color);
+}
+
+.btn-operador:hover,
+.btn:hover,
+.btn-apagar {
+  background-color: var(--hard-blue-color);
+}
+
+.btn-apagar:hover {
+  background-color: var(--black-border);
+  border-color: var(--hard-blue-color);
+}
+
+.name {
+display: flex;
+justify-content: center;
+padding-top: 10px;
+  position: relative;
+  font-size: 40px;
+  color: transparent;
+  text-shadow: 0 1px var(--blue-color), -1px 0 var(--hard-blue-color), -1px 2px var(--blue-color), -2px 1px var(--hard-blue-color),
+    -2px 3px var(--blue-color), -3px 2px var(--hard-blue-color), -3px 4px var(--blue-color), -4px 3px var(--hard-blue-color),
+    -4px 5px var(--blue-color), -5px 4px var(--hard-blue-color), -5px 6px var(--blue-color), -6px 5px var(--hard-blue-color);
+    
+}
